@@ -1,0 +1,635 @@
+#nprogress .bar {
+	height: 3px;
+}
+
+button:focus {
+	display: none;
+}
+
+a {
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: none !important;
+}
+
+.darkNav li.nav-item:hover {
+	background-color: rgba(123, 165, 201, 0.4) !important;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: #e6e6e6;
+	padding: 8px 32px !important;
+}
+
+/* li.dropdown.nav-item {
+	padding: 8px 32px 8px 32px;
+} */
+
+.navbar-dark .navbar-nav .nav-link .darktext {
+	color: #8a8383 !important;
+}
+
+.darkNav a:hover {
+	color: #c0c0c0 !important;
+}
+
+.navLogo {
+	width: 180px;
+}
+
+.navDropdown .nav-link {
+	color: #7b8a8b !important;
+}
+
+.navDropdown .nav-link:hover {
+	color: #ffffff !important;
+}
+
+/* --------------Index Page CSS-------------- */
+
+.bgImage {
+	background-image: url('/static/images/space.jpg'); /* The image used */
+	background-color: #cccccc; /* Used if the image is unavailable */
+	height: 100vh; /* You must set a specified height */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}
+.landingNav li.nav-item a {
+	color: #e6e6e6;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: #ffffff !important;
+}
+
+.landingNav li.nav-item:hover {
+	background-color: rgba(231, 231, 231, 0.119) !important;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.rightLandingNav {
+	color: #e6e6e6;
+}
+
+.rightLandingNav .linkedIcon {
+	color: #e6e6e6;
+	font-size: 18px;
+}
+
+.rightLandingNav li:hover {
+	background-color: rgba(231, 231, 231, 0.119) !important;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.landingFooter {
+	position: fixed;
+	bottom: 0;
+	height: 40px;
+	margin-left: 20px;
+	padding: 10px;
+}
+
+.titleDiv {
+	color: #e6e6e6;
+	display: flex;
+	justify-content: center;
+	padding-top: 10%;
+	font-size: 2.8rem;
+	text-align: center;
+}
+
+.titleDiv h1 {
+	font-size: 4.8rem;
+}
+
+.titleBlurb {
+	color: #e6e6e6;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.gridRow {
+	padding-top: 70px;
+}
+
+h5.modal-title {
+	font-size: 1.8rem;
+}
+
+.modal-content {
+	background-color: #2c3e50 !important;
+	color: #fff;
+}
+
+.sdvosbLogo {
+	width: 100% !important;
+	height: 100%;
+}
+
+.sdvosbLogo img {
+	width: 80px !important;
+}
+
+.modal .close {
+	color: #fff !important;
+}
+
+.modal-content hr {
+	border-top: 1px solid rgba(245, 245, 245, 0.5);
+}
+
+.gridCol .btn {
+	min-width: 100%;
+	background-color: rgba(52, 120, 183, 0.2) !important;
+	color: #e6e6e6;
+	border: none;
+	padding: 20px;
+	font-size: 1.1rem;
+	cursor: pointer;
+}
+
+.modalBTNs:hover {
+	background-color: rgba(42, 59, 75, 0.5) !important;
+}
+
+.modalBTNs svg {
+	font-size: 1.6rem;
+}
+
+.modalBTNs hr {
+	background-color: #e6e6e6;
+}
+
+.modalPhoto {
+	border-style: none;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+
+.modal-header img {
+	text-align: center;
+}
+
+.sdvosbLogo {
+	width: 80px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+.sdvosbLogo img {
+	width: 100%;
+}
+
+.contactLink {
+	text-decoration: none;
+	color: #000000;
+}
+.socialIcons {
+	list-style-type: none;
+}
+
+a.contactText.contactLink:hover {
+	text-decoration: none;
+}
+
+.contactText a {
+	color: #ffffff !important;
+}
+
+.contactText a:hover {
+	color: #b6b6b6 !important;
+}
+
+.socialIcons a {
+	color: #ffffff;
+	font-size: 28px;
+}
+
+@media (max-width: 992px) {
+	.titleDiv h1 {
+		font-size: 2.2rem;
+	}
+	.titleBlurb h5 {
+		font-size: 0.9rem;
+	}
+	a.nav-link {
+		padding-left: 0;
+	}
+	.modalBTNs {
+		min-width: 80%;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	.landingFooter {
+		height: 60px;
+	}
+}
+
+/* --------------User Dashboard Page CSS-------------- */
+
+.card-user .image img {
+	max-width: 100% !important;
+	border-radius: 3px;
+}
+
+.card .image {
+	overflow: hidden !important;
+	height: 200px !important;
+	position: relative !important;
+}
+
+.card-user .image {
+	height: 130px !important;
+}
+
+.card {
+	box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+	background-color: #fff;
+	color: #252422;
+	margin-bottom: 20px;
+	position: relative;
+	border: 0;
+	-webkit-transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1),
+		box-shadow 0.2s ease;
+	-webkit-transition: box-shadow 0.2s ease,
+		-webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+	transition: box-shadow 0.2s ease,
+		-webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+	transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease;
+	transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+		-webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+}
+
+.card-user .avatar {
+	width: 124px;
+	height: 124px;
+	border: 1px solid #fff;
+	position: relative;
+}
+
+.card .avatar {
+	overflow: hidden;
+	border-radius: 50%;
+	margin-bottom: 15px;
+}
+
+.card-user .author {
+	text-align: center;
+	text-transform: none;
+	margin-top: -77px;
+}
+
+.testMargin {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 200px;
+}
+
+.profileSection {
+	display: block;
+	margin: 0 auto;
+}
+
+.sideNavMenu {
+	cursor: pointer;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.sideNavMenu:hover {
+	background-color: #2c3e50;
+	color: #ffffff;
+}
+
+.bg-page {
+	/* background-color: #c7c7c7;
+	height: 100vh;
+	background-attachment: fixed; */
+}
+
+.list-group {
+	padding-bottom: 20px;
+}
+
+.listGroupCSS a {
+	color: #2c3e50;
+	text-decoration: none;
+}
+
+.listGroupCSS a:hover {
+	color: #d4d4d4;
+	text-decoration: none;
+}
+
+.register-component {
+	width: 400px;
+	max-width: 95%;
+	display: block;
+	margin: 0 auto;
+}
+
+.authDiv {
+	background-image: url('/static/images/people.jpg'); /* The image used */
+	background-color: #12295a; /* Used if the image is unavailable */
+	height: 100vh; /* You must set a specified height */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.authDivTwo {
+	background-image: url('/static/images/signup.jpg'); /* The image used */
+	background-color: #12295a; /* Used if the image is unavailable */
+	height: 100vh; /* You must set a specified height */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.authText {
+	color: #ffffff;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 24px;
+}
+
+.authContainer {
+	width: 95%;
+	padding-top: 40px;
+	display: block;
+	margin: 0 auto;
+}
+
+.authContainer input.form-control {
+	border: none;
+	background-color: #ececec;
+	color: #b3b1b1;
+}
+
+.authContainer .btn-primary {
+	margin-top: 10px;
+}
+
+.authTitle {
+	background-color: #2c3e50;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 5px;
+	width: 90%;
+	display: block;
+	margin: auto;
+	margin-top: -30px;
+}
+
+.gradient-title {
+	background-image: linear-gradient(
+		to top,
+		rgba(44, 62, 80, 0),
+		rgba(44, 62, 80, 1)
+	);
+	padding: 20px;
+	margin-bottom: 40px;
+	color: #ececec;
+	border-radius: 10px 10px 0 0;
+}
+
+.col-md-12.pt-3.pb-5.gradient-title {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+@media (min-width: 576px) {
+	.authContainer {
+		width: 400px;
+		padding-top: 80px;
+	}
+	.authText {
+		font-size: 36px;
+		padding-top: 90px;
+	}
+
+	.sideNav {
+		width: 400px;
+		height: 100vh;
+		background-color: beige;
+	}
+}
+
+.newCatsTags {
+	background-color: rgba(0, 0, 0, 0.03);
+	border-top: 1px solid rgba(0, 0, 0, 0.125);
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.jobCard {
+	padding: 10px;
+}
+
+.cat-card {
+	padding: 20px;
+}
+
+.ql-editor {
+	min-height: 350px;
+}
+
+.ql-container.ql-snow {
+	border-radius: 0 0 5px 5px;
+}
+
+.ql-toolbar.ql-snow {
+	border-radius: 5px 5px 0 0;
+}
+
+.jobCatCard.card-title {
+	border-bottom: 1px solid #c4c1c1;
+}
+
+.errorSuccessMessage {
+	padding: 15px 0;
+}
+
+/* --------------Community Page CSS-------------- */
+
+.featurette-img img {
+	max-width: 70%;
+}
+
+.communityPage {
+	padding-bottom: 150px;
+}
+
+img.featurette-image.img-fluid.mx-auto {
+	border-radius: 5px;
+}
+
+.marketing h2 {
+	font-weight: 400;
+}
+
+@media (min-width: 62em) {
+	.featurette-head {
+		margin-top: 4rem;
+	}
+}
+
+@media (min-width: 62em) {
+	.featurette-heading {
+		margin-top: 7rem;
+	}
+}
+@media (min-width: 40em) {
+	.featurette-heading {
+		font-size: 40px;
+	}
+}
+.marketing h2 {
+	font-weight: 400;
+}
+
+.featurette-heading {
+	font-weight: 300;
+	line-height: 1;
+	letter-spacing: -0.05rem;
+}
+
+.lead {
+	font-size: 1.25rem;
+	font-weight: 300;
+}
+
+.jumbotron {
+	border-radius: 0px !important;
+}
+
+.jumboBG {
+	position: relative;
+	background-color: black;
+	height: 75vh;
+	min-height: 25rem;
+	width: 100%;
+	overflow: hidden;
+}
+
+.jumboBG video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 0;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.jumboBG .container {
+	position: relative;
+	z-index: 2;
+}
+
+.jumboBG .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.5;
+	z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+	.jumboBG {
+		background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black
+			no-repeat center center scroll;
+	}
+	.jumboBG video {
+		display: none;
+	}
+}
+
+.communityTitle {
+	text-align: center;
+}
+
+.communityTitle h2 {
+	font-size: 48px;
+}
+
+.jobTitlePage {
+	color: #2c3e50;
+}
+
+.jobTitlePage:hover {
+	color: #7e7e7e;
+}
+
+.teamCard {
+	height: 400px;
+	width: auto;
+}
+
+.teamTop {
+	height: 200px;
+	border-bottom: none !important;
+}
+
+.teamCardHalf {
+	height: 200;
+}
+
+.teamPageImg {
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+	border: 5px solid #ffffff;
+	border-radius: 50%;
+}
+
+.teamHeadCard {
+	border-radius: 5px;
+}
+
+.teamHeadCard {
+	border-radius: 5px 5px 0 0;
+}
+
+.teamDiv {
+	width: 100%;
+	padding-bottom: 150px;
+}
+
+.centerTitle {
+	text-align: center;
+}
+
+.paddingTeam {
+	display: flex;
+	justify-content: center;
+}
+
+.teamJumboBG {
+	background-image: url(/static/images/teamHeadBG.jpg);
+	background-position: center;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #ffffff;
+}
