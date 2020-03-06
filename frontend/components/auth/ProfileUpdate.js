@@ -131,16 +131,16 @@ const ProfileUpdate = () => {
 						username: data.username,
 						firstName: data.firstName,
 						lastName: data.lastName,
-						// jobTitle: data.jobTitle,
-						// cellPhone: data.cellPhone,
-						// homePhone: data.homePhone,
-						// emergencyName: data.emergencyName,
-						// emergencyPhone: data.emergencyPhone,
-						// userStreet: data.userStreet,
-						// suiteNumber: data.suiteNumber,
-						// userCity: data.userCity,
-						// userState: data.userState,
-						// userZip: data.userZip,
+						jobTitle: data.jobTitle,
+						cellPhone: data.cellPhone,
+						homePhone: data.homePhone,
+						emergencyName: data.emergencyName,
+						emergencyPhone: data.emergencyPhone,
+						userStreet: data.userStreet,
+						suiteNumber: data.suiteNumber,
+						userCity: data.userCity,
+						userState: data.userState,
+						userZip: data.userZip,
 						email: data.email,
 						about: data.about,
 						password: '',
@@ -157,7 +157,7 @@ const ProfileUpdate = () => {
 	const profileUpdateForm = () => (
 		<div className='profileUpdateForm'>
 			<Card className='card-user'>
-				<CardHeader>
+				<CardHeader className='editProfileHeader'>
 					<CardTitle tag='h5'>Edit Profile</CardTitle>
 				</CardHeader>
 				<CardBody>

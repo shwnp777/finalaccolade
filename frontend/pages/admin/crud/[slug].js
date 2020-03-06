@@ -7,7 +7,7 @@ const Job = () => {
 	return (
 		<AdminLayout>
 			<Admin>
-				<div className='container-fluid'>
+				<div className='container-fluid marginBottom'>
 					<div className='row'>
 						<div className='col-md-12 pt-5 pb-5'>
 							<h2>Update Job</h2>

@@ -79,7 +79,7 @@ const AboutModal = props => {
 						</a>
 					</Link>
 					<Button color='danger' onClick={toggle}>
-						Cancel
+						Close
 					</Button>
 				</ModalFooter>
 			</Modal>

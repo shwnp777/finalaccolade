@@ -8,22 +8,20 @@ const Signup = () => {
 	return (
 		<div className='authDivTwo'>
 			<Layout>
-				<Admin>
-					<div className='authContainer'>
-						<Card>
-							<div className='authTitle'>
-								<CardBody>
-									<CardTitle>Member Signup</CardTitle>
-								</CardBody>
-							</div>
-
+				<div className='authContainer'>
+					<Card>
+						<div className='authTitle'>
 							<CardBody>
-								<CardTitle>Register</CardTitle>
-								<SignupComponent />
+								<CardTitle>Member Signup</CardTitle>
 							</CardBody>
-						</Card>
-					</div>
-				</Admin>
+						</div>
+
+						<CardBody>
+							<CardTitle>Register</CardTitle>
+							<SignupComponent />
+						</CardBody>
+					</Card>
+				</div>
 			</Layout>
 		</div>
 	);

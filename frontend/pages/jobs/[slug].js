@@ -83,23 +83,21 @@ const SingleJob = ({ job, query }) => {
 								<CardTitle>
 									<h3 className='pb-3 pt-3'>{job.title}</h3>
 								</CardTitle>
-								<p className='mt-3'>
+								<p className='mt-1'>
 									Posted by {job.postedBy.jobTitle} | Published{' '}
 									{moment(job.updatedAt).fromNow()}
 								</p>
-
-								<div className='pb-3'>
-									{showJobCategories(job)}
-									{showJobTags(job)}
-									<br />
-									<br />
-								</div>
 							</CardHeader>
 
-							<div className='container'>
+							<div className='container pt-5'>
 								<section>
 									<div className='col-md-12 lead'>{renderHTML(job.body)}</div>
 								</section>
+							</div>
+							<div className='pt-5 pb-5 pl-5'>
+								{showJobCategories(job)}
+								{showJobTags(job)}
+								<br />
 							</div>
 						</Card>
 

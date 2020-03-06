@@ -35,6 +35,7 @@ const userSchema = new mongoose.Schema(
 			trim: true,
 			max: 32
 		},
+
 		homePhone: {
 			type: String,
 			trim: true,

@@ -44,3 +44,16 @@ export const update = (token, user) => {
 		})
 		.catch(err => console.log(err));
 };
+
+export const listUser = () => {
+	return fetch(`${API}/users`, {
+		method: 'GET',
+		headers: {
+			Accept: 'application/json'
+		}
+	})
+		.then(response => {
+			return response.json();
+		})
+		.catch(err => console.log(err));
+};

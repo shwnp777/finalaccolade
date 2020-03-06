@@ -114,7 +114,7 @@ const Jobs = ({
 		<React.Fragment>
 			{head()}
 			<Layout>
-				<main>
+				<main className='jobBG'>
 					<div className='container-fluid'>
 						<header>
 							<div className='col-md-12 pt-3 pb-5 gradient-title'>
@@ -126,6 +126,7 @@ const Jobs = ({
 						<Row>
 							<Col md='3'>
 								{showAllCategories()}
+								<br />
 								{showAllTags()}
 							</Col>
 							<Col md='9'>

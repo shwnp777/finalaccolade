@@ -18,6 +18,7 @@ import {
 	NavbarText
 } from 'reactstrap';
 import { FaLinkedin } from 'react-icons/fa';
+import NewsButton from '../NewsButton';
 
 Router.onRouteChangeStart = url => NProgress.start();
 Router.onRouteChangeComplete = url => NProgress.done();
@@ -34,7 +35,7 @@ const LandingNav = props => {
 				<Link href='/'>
 					<NavLink>
 						<img
-							src='/static/images/fulllogo2.png'
+							src='/static/images/shortlogo.png'
 							alt='Accolade Logo'
 							className='navLogo'
 						/>
@@ -57,12 +58,14 @@ const LandingNav = props => {
 								</DropdownItem>
 								<DropdownItem divider />
 								<DropdownItem>
-									<NavLink href='/community'>Our Cummunity</NavLink>
+									<NavLink href='/community'>Our Community</NavLink>
 								</DropdownItem>
 							</DropdownMenu>
 						</UncontrolledDropdown>
 					</Nav>
+
 					<Nav className='rightLandingNav'>
+						<NewsButton />
 						{!isAuth() && (
 							<NavItem>
 								<Link href='/signin'>
@@ -88,14 +91,6 @@ const LandingNav = props => {
 								</Link>
 							</NavItem>
 						)}
-						<NavItem>
-							<NavLink
-								href='https://www.linkedin.com/company/accolade-technologies-llc/'
-								className='linkedIcon'
-							>
-								<FaLinkedin />
-							</NavLink>
-						</NavItem>
 					</Nav>
 				</Collapse>
 				<style jsx>{`

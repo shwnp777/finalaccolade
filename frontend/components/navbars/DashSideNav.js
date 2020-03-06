@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import { ListGroup, ListGroupItem, Row, Col, Card } from 'reactstrap';
 
@@ -7,33 +8,7 @@ const DashSideNav = () => {
 	return (
 		<Col md='2'>
 			<ListGroup className='listGroupCSS'>
-				<Link href='/about'>
-					<a>
-						<ListGroupItem className='sideNavMenu'>
-							Create Category
-						</ListGroupItem>
-					</a>
-				</Link>
-				<Link href='/about'>
-					<a>
-						<ListGroupItem className='sideNavMenu'>Create Tag</ListGroupItem>
-					</a>
-				</Link>
-				<Link href='/about'>
-					<a>
-						<ListGroupItem className='sideNavMenu'>
-							Create Job listing
-						</ListGroupItem>
-					</a>
-				</Link>
-				<Link href='/about'>
-					<a>
-						<ListGroupItem className='sideNavMenu'>
-							Edit/Delete Job Listings
-						</ListGroupItem>
-					</a>
-				</Link>
-				<Link href='/about'>
+				<Link href='https://accolade-llc.unanet.biz/accolade-llc/'>
 					<a>
 						<ListGroupItem className='sideNavMenu'>Time Sheet</ListGroupItem>
 					</a>

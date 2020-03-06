@@ -42,7 +42,7 @@ const CareersModal = props => {
 					</p>
 
 					<p>
-						Accolade Technologies employees work closed with esteemed customers
+						Accolade Technologies employees work closely with esteemed customers
 						to develop solutions that allow them to carry out high-stakes
 						national security missions. This position provides an opportunity to
 						further advance cutting-edge technology that supports some of our
@@ -56,7 +56,7 @@ const CareersModal = props => {
 						</a>
 					</Link>
 					<Button color='danger' onClick={toggle}>
-						Cancel
+						Close
 					</Button>
 				</ModalFooter>
 			</Modal>

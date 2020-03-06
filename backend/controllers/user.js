@@ -47,6 +47,30 @@ exports.publicProfile = (req, res) => {
 	});
 };
 
+// ----------------------------- I am adding a list of ALL users down here -------------------------
+
+exports.listUsers = (req, res) => {
+	let users;
+
+	User.find({})
+		.select(
+			'_id username firstName lastName cellPhone emergencyName emergencyPhone jobTitle email'
+		)
+		.exec((err, data) => {
+			if (err) {
+				return res.json({
+					error: errorHandler(err)
+				});
+			}
+			users = data; // users
+
+			// return all jobs categories tags
+			res.json({ users, size: users.length });
+		});
+};
+
+// ----------------------------- I am adding a list of ALL users up here -------------------------
+
 exports.update = (req, res) => {
 	let form = new formidable.IncomingForm();
 	form.keepExtension = true;

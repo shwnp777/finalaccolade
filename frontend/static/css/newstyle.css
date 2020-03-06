@@ -25,10 +25,6 @@ a:hover {
 	padding: 8px 32px !important;
 }
 
-/* li.dropdown.nav-item {
-	padding: 8px 32px 8px 32px;
-} */
-
 .navbar-dark .navbar-nav .nav-link .darktext {
 	color: #8a8383 !important;
 }
@@ -38,7 +34,7 @@ a:hover {
 }
 
 .navLogo {
-	width: 180px;
+	width: 50px !important;
 }
 
 .navDropdown .nav-link {
@@ -49,12 +45,65 @@ a:hover {
 	color: #ffffff !important;
 }
 
+.frontLogo img {
+	width: 100px;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+}
+
+@media (max-width: 762px) {
+	.frontLogo img {
+		display: none;
+	}
+}
+
+.newsLink {
+	background-color: #1c87c9;
+	border: none;
+	border-radius: 3px;
+	color: #eeeeee;
+	cursor: pointer;
+	display: inline-block;
+}
+
+#newsToolTip {
+	background-color: rgba(52, 120, 183, 0.2);
+	color: #fff;
+	padding: 10px;
+	font-size: 1.3rem;
+}
+
+.bs-tooltip-auto[x-placement^='bottom'] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+	border-bottom-color: rgba(52, 120, 183, 0.2) !important;
+}
+
+@keyframes glowing {
+	0% {
+		background-color: #28497a;
+		box-shadow: 0 0 5px #28497a;
+	}
+	50% {
+		background-color: #32568b;
+		box-shadow: 0 0 20px #32568b;
+	}
+	100% {
+		background-color: #28497a;
+		box-shadow: 0 0 5px #28497a;
+	}
+}
+.newsLink {
+	animation: glowing 1300ms infinite;
+}
+
 /* --------------Index Page CSS-------------- */
 
 .bgImage {
 	background-image: url('/static/images/space.jpg'); /* The image used */
 	background-color: #cccccc; /* Used if the image is unavailable */
-	height: 100vh; /* You must set a specified height */
+	min-height: 100vh; /* You must set a specified height */
+	overflow: scroll;
 	background-position: center; /* Center the image */
 	background-repeat: no-repeat; /* Do not repeat the image */
 	background-size: cover; /* Resize the background image to cover the entire container */
@@ -79,7 +128,7 @@ a:hover {
 
 .rightLandingNav .linkedIcon {
 	color: #e6e6e6;
-	font-size: 18px;
+	font-size: 28px;
 }
 
 .rightLandingNav li:hover {
@@ -151,7 +200,7 @@ h5.modal-title {
 	color: #e6e6e6;
 	border: none;
 	padding: 20px;
-	font-size: 1.1rem;
+	font-size: 1.5rem;
 	cursor: pointer;
 }
 
@@ -232,6 +281,39 @@ a.contactText.contactLink:hover {
 	}
 	.landingFooter {
 		height: 60px;
+	}
+
+	.homeGridRow {
+		padding-top: 30px;
+	}
+
+	.gridCol .btn {
+		font-size: 1.4rem !important;
+	}
+
+	.titleDiv {
+		padding-top: 10px;
+	}
+
+	#newsToolTip {
+		display: none;
+	}
+
+	.navbar-dark .navbar-nav .nav-link {
+		padding: none;
+	}
+
+	.newsLink {
+		animation: none !important;
+		background-color: transparent !important;
+	}
+
+	.rightLandingNav {
+		display: block !important;
+	}
+
+	.navbar-dark .navbar-nav .nav-link {
+		padding: 8px 32px 8px 0px !important;
 	}
 }
 
@@ -408,6 +490,18 @@ a.contactText.contactLink:hover {
 .col-md-12.pt-3.pb-5.gradient-title {
 	margin-top: 40px;
 	margin-bottom: 40px;
+}
+
+.adminSideNav li {
+	background-color: #2c3e50;
+}
+
+.adminSideNav li a {
+	color: #e6e6e6;
+}
+
+.adminSideNav li:hover {
+	background-color: #737d86;
 }
 
 @media (min-width: 576px) {
@@ -596,11 +690,35 @@ img.featurette-image.img-fluid.mx-auto {
 }
 
 .teamPageImg {
-	width: 300px;
+	width: 200px;
 	display: block;
 	margin: 0 auto;
 	border: 5px solid #ffffff;
 	border-radius: 50%;
+}
+
+.leadershipSection {
+	width: 1200px;
+	display: block;
+	margin: 0 auto !important;
+}
+
+.leadershipCardHead {
+	background-color: #2c3e50 !important;
+	border: none !important;
+}
+
+.teamCards {
+	background-color: #2c3e50 !important;
+	color: #ffffff;
+}
+
+.leadershipCardFooter {
+	background-color: #2c3e50 !important;
+}
+
+.leadershipCardName {
+	font-size: 34px;
 }
 
 .teamHeadCard {
@@ -626,10 +744,331 @@ img.featurette-image.img-fluid.mx-auto {
 }
 
 .teamJumboBG {
-	background-image: url(/static/images/teamHeadBG.jpg);
+	background-image: url(/static/images/handsone.jpg);
 	background-position: center;
 	height: 500px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #ffffff;
+}
+
+.partnerJumboBG {
+	background-image: url(/static/images/partner.jpg);
+	background-position: center;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #ffffff;
+}
+
+.userDBTable {
+	max-width: 100%;
+	overflow: auto;
+	white-space: nowrap;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.userDBHeader {
+	background-color: #2c3e50;
+	color: #ffffff;
+}
+
+.userDBHeader th {
+	border: 1px solid #a0a0a0;
+}
+
+.table td {
+	border: 1px solid #a0a0a0;
+	color: #2c3e50;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.cardDashExtra {
+	background-image: url(/static/images/basic.jpg);
+	background-position: center;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #ffffff;
+}
+.cardDashExtra {
+	background-image: url(/static/images/basic.jpg);
+	background-position: center;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #ffffff;
+}
+
+.partnerIMG img {
+	display: block;
+	margin: 0 auto;
+}
+
+.partnerIMG img {
+	max-width: 150px;
+}
+
+.partnerIMG.row {
+	display: flex;
+	height: 300px;
+	justify-content: center;
+	align-items: center;
+}
+
+.marginBottom {
+	margin-bottom: 150px;
+}
+
+.editProfileHeader {
+	background-color: #2c3e50 !important;
+	color: #d6d5d5;
+}
+
+.smallCardHeader {
+	background-color: #2c3e50 !important;
+}
+
+.smallCardTitle {
+	color: #ffffff;
+}
+
+.userDBbody a {
+	color: #2c3e50;
+}
+
+. element.style {
+}
+button:not(:disabled),
+[type='button']:not(:disabled),
+[type='reset']:not(:disabled),
+[type='submit']:not(:disabled) {
+	cursor: pointer;
+}
+
+.modal-content p {
+	font-size: 18px;
+}
+
+.modal-content li {
+	font-size: 18px;
+}
+
+.NewsDiv {
+	background-color: #2c3e50;
+	min-height: 100vh;
+	color: rgb(231, 231, 231);
+}
+
+/* -------------- TEAM PAGE -------------- */
+
+.gray {
+	color: #a5a5a5;
+}
+
+.topMrg {
+	padding-top: 40px;
+}
+
+.team-member {
+	margin: 15px 0;
+	padding: 0;
+	-webkit-box-shadow: 7px 10px 18px -13px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 7px 10px 18px -13px rgba(0, 0, 0, 0.75);
+	box-shadow: 7px 10px 18px -13px rgba(0, 0, 0, 0.75);
+}
+
+.team-member figure {
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	border-radius: 5px;
+}
+
+.team-member figure img {
+	width: 313px;
+}
+
+.team-member figcaption p {
+	font-size: 18px;
+}
+
+.team-member figcaption ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.team-member figcaption ul {
+	visibility: visible;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+
+.team-member figcaption ul li {
+	display: inline-block;
+	padding: 10px;
+}
+
+.team-member h4 {
+	margin-bottom: 0 !important;
+	padding-top: 20px;
+}
+
+.team-member figcaption {
+	padding: 50px;
+	color: transparent;
+	background-color: transparent;
+	position: absolute;
+	z-index: 996;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.team-member figure:hover figcaption {
+	visibility: visible;
+	color: #fff;
+	background: rgba(44, 62, 80, 0.9);
+	/* Primary color, can be changed via colors.css */
+
+	height: 100%;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.team-member figure:hover figcaption ul li a:hover {
+	color: rgba(49, 49, 49, 0.97);
+}
+
+.team-member figure img {
+	-webkit-transform: scale(1) rotate(0) translateY(0);
+	-moz-transform: scale(1) rotate(0) translateY(0);
+	-o-transform: scale(1) rotate(0) translateY(0);
+	-ms-transform: scale(1) rotate(0) translateY(0);
+	transform: scale(1) rotate(0) translateY(0);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+.team-member figure:hover img {
+	-webkit-transform: scale(1.1) rotate(1deg) translateY(12px);
+	-moz-transform: scale(1.1) rotate(1deg) translateY(12px);
+	-o-transform: scale(1.1) rotate(1deg) translateY(12px);
+	-ms-transform: scale(1.1) rotate(1deg) translateY(12px);
+	transform: scale(1.1) rotate(1deg) translateY(12px);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
+
+#team {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	color: #999;
+	background-color: #fff;
+}
+
+#team h1,
+#team h2,
+#team h3,
+#team h5,
+#team h6 {
+	margin: 0 0 20px 0;
+	text-transform: none;
+	color: #2c3e50;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
+#team a:link,
+#team a:active,
+#team a:visited {
+	color: rgba(255, 255, 255, 1);
+}
+
+#team a:hover {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.teamTitle {
+	color: #d1d1d1 !important;
+	font-size: 24px;
+}
+
+.teamA svg {
+	font-size: 36px;
+	color: #fff;
+}
+
+.NewsDiv {
+	padding: 30px;
+	padding-bottom: 180px;
+}
+
+.UpComing {
+	padding-top: 80px;
+}
+
+.cardDark {
+	background-color: rgba(131, 131, 131, 0.158) !important;
+	color: #fff;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 50px;
+	height: 300px;
+}
+
+.imgDiv {
+	width: 300px;
+	float: left !important;
+	overflow: auto;
+	padding-right: 10px;
+	border-radius: 5px;
+}
+.imgDiv2 {
+	width: 300px;
+	float: right !important;
+	overflow: auto;
+	padding-left: 10px;
+	border-radius: 5px;
+}
+
+.dateDiv {
+	margin-left: 60px;
+	background-color: #37516b;
+	width: 280px;
+	text-align: center;
+	height: 40px;
+	padding: 10px;
+	margin-bottom: -1px;
+	color: #fff;
+	border-radius: 3px 3px 0px 0px;
+}
+
+.missionText {
+	font-weight: 400;
+	font-size: 1.5rem;
 }

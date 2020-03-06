@@ -34,7 +34,7 @@ const DarkNav = props => {
 				<Link href='/'>
 					<NavLink>
 						<img
-							src='/static/images/fulllogo2.png'
+							src='/static/images/shortlogo.png'
 							alt='Accolade Logo'
 							className='navLogo'
 						/>
@@ -56,7 +56,7 @@ const DarkNav = props => {
 								</DropdownItem>
 								<DropdownItem divider />
 								<DropdownItem className='darktext'>
-									<NavLink href='/community'>Our Cummunity</NavLink>
+									<NavLink href='/community'>Our Community</NavLink>
 								</DropdownItem>
 							</DropdownMenu>
 						</UncontrolledDropdown>
@@ -70,14 +70,13 @@ const DarkNav = props => {
 							</NavItem>
 						)}
 
-						{!isAuth() && (
+						{isAuth() && isAuth().role === 1 && (
 							<NavItem>
-								<NavLink
-									href='https://www.linkedin.com/company/accolade-technologies-llc/'
-									className='linkedIcon'
-								>
-									<FaLinkedin />
-								</NavLink>
+								<Link href='/admin'>
+									<NavLink style={{ cursor: 'pointer' }}>{`${
+										isAuth().firstName
+									}'s Dashboard`}</NavLink>
+								</Link>
 							</NavItem>
 						)}
 

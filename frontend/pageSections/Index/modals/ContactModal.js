@@ -88,13 +88,17 @@ const ContactModal = props => {
 					</p>
 				</ModalBody>
 				<ModalFooter>
-					<Link href='/partners'>
+					<Link
+						href='mailto:information@accolade-llc.com?Subject=Question%20About%20Accolade!'
+						prefetch={false}
+					>
 						<a>
-							<Button color='info'>Our Partners</Button>{' '}
+							<Button color='info'>Email Us</Button>{' '}
 						</a>
-					</Link>{' '}
+					</Link>
+
 					<Button color='danger' onClick={toggle}>
-						Cancel
+						Close
 					</Button>
 				</ModalFooter>
 			</Modal>

@@ -2,28 +2,31 @@ import Link from 'next/link';
 import renderHTML from 'react-render-html';
 import moment from 'moment';
 import { API } from '../../config';
+import {
+	Card,
+	CardBody,
+	CardHeader,
+	CardTitle,
+	CardFooter,
+	CardText
+} from 'reactstrap';
 
 const SmallCard = ({ job }) => {
 	return (
-		<div className='card'>
-			<div className='card-body'>
-				<section>
+		<Card>
+			<CardHeader className='smallCardHeader'>
+				<CardTitle>
 					<Link href={`/jobs/${job.slug}`}>
 						<a>
-							<h5 className='card-title'>{job.title}</h5>
+							<h5 className='card-title smallCardTitle'>{job.title}</h5>
 						</a>
 					</Link>
-					<p className='card-text'>{renderHTML(job.excerpt)}</p>
-				</section>
-			</div>
+				</CardTitle>
+			</CardHeader>
+			<CardBody>{renderHTML(job.excerpt)}</CardBody>
 
-			<div className='card-body'>
-				Posted {moment(job.updatedAt).fromNow()} by{' '}
-				<Link href={`/`}>
-					<a className='float-right'>{job.postedBy.jobTitle}</a>
-				</Link>
-			</div>
-		</div>
+			<CardFooter>Posted {moment(job.updatedAt).fromNow()}</CardFooter>
+		</Card>
 	);
 };
 

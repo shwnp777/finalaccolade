@@ -65,7 +65,15 @@ exports.signin = (req, res) => {
 		const { _id, username, firstName, lastName, jobTitle, email, role } = user;
 		return res.json({
 			token,
-			user: { _id, username, firstName, lastName, jobTitle, email, role }
+			user: {
+				_id,
+				username,
+				firstName,
+				lastName,
+				jobTitle,
+				email,
+				role
+			}
 		});
 	});
 };

@@ -7,7 +7,7 @@ import SolutionsModal from './modals/SolutionsModal';
 const GridSection = props => {
 	return (
 		<Container>
-			<Row xs='2' lg='4' className='gridRow'>
+			<Row xs='2' lg='4' className='gridRow homeGridRow'>
 				<Col className='gridCol'>
 					<AboutModal />
 				</Col>

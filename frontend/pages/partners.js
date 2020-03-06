@@ -1,13 +1,17 @@
 import LightLayout from '../components/layouts/LightLayout';
 
-const Partners = () => {
+import PartnerHeader from '../pageSections/about/PartnerHeader';
+import PartnerLogo from '../pageSections/about/PartnerLogo';
+
+const OurPartners = () => {
 	return (
 		<LightLayout>
-			<div className='partners-page'>
-				<h1>Partners Page</h1>
+			<div className='teamDiv'>
+				<PartnerHeader />
+				<PartnerLogo />
 			</div>
 		</LightLayout>
 	);
 };
 
-export default Partners;
+export default OurPartners;

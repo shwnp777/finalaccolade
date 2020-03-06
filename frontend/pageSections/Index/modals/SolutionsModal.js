@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from 'next/link';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { FaPuzzlePiece } from 'react-icons/fa';
 
@@ -176,11 +177,13 @@ const SolutionsModal = props => {
 					</ul>
 				</ModalBody>
 				<ModalFooter>
-					<Button color='info' onClick={toggle}>
-						Learn More
-					</Button>{' '}
+					<Link href='/partners'>
+						<a>
+							<Button color='info'>Our Portfolio</Button>{' '}
+						</a>
+					</Link>{' '}
 					<Button color='danger' onClick={toggle}>
-						Cancel
+						Close
 					</Button>
 				</ModalFooter>
 			</Modal>

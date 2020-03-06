@@ -6,10 +6,15 @@ import { ListGroup, ListGroupItem, Row, Col, Card } from 'reactstrap';
 const AdminSideNav = () => {
 	return (
 		<div className='adminSideNav'>
-			<ul className='list-group'>
+			<ul className='list-group adminSideNav'>
 				<li className='list-group-item'>
 					<Link href='/user'>
 						<a>My Profile</a>
+					</Link>
+				</li>
+				<li className='list-group-item'>
+					<Link href='/users'>
+						<a>User DataBase</a>
 					</Link>
 				</li>
 				<li className='list-group-item'>

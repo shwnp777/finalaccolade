@@ -23,7 +23,7 @@ exports.create = (req, res) => {
 
 		if (!title || !title.length) {
 			return res.status(400).json({
-				error: 'title is required'
+				error: 'Job title is required'
 			});
 		}
 
@@ -128,6 +128,7 @@ exports.listAllJobsCategoriesTags = (req, res) => {
 	let skip = req.body.skip ? parseInt(req.body.skip) : 0;
 
 	let jobs;
+
 	let categories;
 	let tags;
 
